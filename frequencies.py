@@ -7,9 +7,10 @@ def frequencies(items):
         return frequencies
 
     for item in items:
-        if item in frequencies:
-            frequencies[item] += 1
+        sitem = str(item)
+        if sitem in frequencies:
+            frequencies[sitem] += 1
         else:
-            frequencies[item] = 1
+            frequencies[sitem] = 1
 
     return frequencies
