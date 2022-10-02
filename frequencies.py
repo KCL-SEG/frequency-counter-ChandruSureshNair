@@ -3,5 +3,13 @@
 
 def frequencies(items):
     frequencies = {}
-    # Your code goes here
+    if items is None:
+        return frequencies
+
+    for item in items:
+        if item in frequencies:
+            frequencies[item] += 1
+        else:
+            frequencies[item] = 1
+
     return frequencies
